@@ -14,19 +14,20 @@ Note:
 
 function getVowels(){
   const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+ 
   let vowels = ["a", "e", "i", "o", "u", "y"] 
   const onlyVowels = alphabet.filter(letter => vowels.includes(letter))
 
-  const newVowel = [
-    alphabet[0],
-    alphabet[4],
-    alphabet[8],
-    alphabet[alphabet.length - 12 - 1],
-    alphabet[alphabet.length - 6 - 1],
-    alphabet[alphabet.length - 2 - 1]
-  ]
+  // const newVowel = [
+  //   alphabet[0],
+  //   alphabet[4],
+  //   alphabet[8],
+  //   alphabet[alphabet.length - 12 - 1],
+  //   alphabet[alphabet.length - 6 - 1],
+  //   alphabet[alphabet.length - 2 - 1]
+  // ]
 
-  return vowels
+  return onlyVowels
 }
 
 module.exports = getVowels
